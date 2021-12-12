@@ -1,0 +1,7 @@
+{
+    "token": "token bot",
+    "guild": "guildID",
+    "stats_member": "id channel",
+    "stats_online": "id channel",
+    "stats_voice": "id channel"
+}
