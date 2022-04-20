@@ -8,7 +8,6 @@ client.on('ready', async () => {
 
 client.on('ready', async () => {
     setInterval(() => {
-        
     var server = client.guilds.cache.get(guild);
     const memberCount = server.memberCount
     const onlineCount = server.members.cache.filter(member => member.presence.status !== "offline").size
