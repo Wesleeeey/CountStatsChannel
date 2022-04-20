@@ -8,14 +8,16 @@ client.on('ready', async () => {
 
 client.on('ready', async () => {
     setInterval(() => {
+        
     var server = client.guilds.cache.get(guild);
     const memberCount = server.memberCount
     const onlineCount = server.members.cache.filter(member => member.presence.status !== "offline").size
     const voiceCount = server.members.cache.filter(m => m.voice.channel).size
+    
     client.channels.cache.get(stats_member).setName(`🌹・Membres : ${memberCount.toLocaleString()}`)
     client.channels.cache.get(stats_online).setName(`🌟・Online : ${onlineCount.toLocaleString()}`)
     client.channels.cache.get(stats_voice).setName(`🐺・Vocal : ${voiceCount.toLocaleString()}`)
-    console.log(`Update Stats Member`)
+    console.log(`Update Stats`)
     }, 300000);
 })
 
